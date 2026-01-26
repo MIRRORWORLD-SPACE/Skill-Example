@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port the app runs on (optional, for documentation/clarity)
-EXPOSE 8010
+EXPOSE 8020
 
 # Command to run the application using Gunicorn and Uvicorn workers
-CMD ["gunicorn", "main:app", "--workers", "2", "--timeout", "120", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8010"]
+CMD ["gunicorn", "main:app", "--workers", "2", "--timeout", "120", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8020"]
