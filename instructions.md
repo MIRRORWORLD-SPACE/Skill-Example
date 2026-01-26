@@ -12,6 +12,17 @@ The Poster Builder is an "Instruction-to-Design" tool. It doesn't just create an
 
 - Email Marketing: Ideal for "hero" images in email templates, announcements, or promotional coupons.
 
+## Constraints (What it Can't Do)
+- Limited to Vertical Format: Only 9:16 aspect ratio is supported.
+
+- Text Rendering Limitations: While it can render text, complex typography or very small fonts may not be perfectly clear.
+
+- No Animation: This skill generates static images only.
+
+- Brand Consistency: While you can specify colors and styles, it may not perfectly match existing brand guidelines without careful prompting.
+
+- Fixed Layout: The layout is generally simple; complex multi-section designs may not be feasible.
+
 ## How to Prompt
 To get a professional result, don't just ask for a "cool poster." Use the CORE framework to provide the model with enough context:
 

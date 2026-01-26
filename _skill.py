@@ -30,7 +30,8 @@ def create_poster(prompt:str):
             img_bytes = generated_image.image.image_bytes 
             img_base64 = base64.b64encode(img_bytes).decode('utf-8')
             #pyperclip.copy('data:image/png;base64,' + img_base64)
-            return {"success": True, "response": img_base64,"response_type":"file"}
+            print(img_base64)
+            return {"success": True, "response":"Image generated successfully", "file": img_base64,"file_type":"image/png"}
 
     except Exception as e:
         print("Error generating image:", e)

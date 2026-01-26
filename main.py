@@ -14,3 +14,4 @@ class CreatePosterRequest(BaseModel):
 async def read_root(request: CreatePosterRequest):
     poster = create_poster(prompt=request.prompt)
     return poster
+    
